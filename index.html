@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevCon 2026 — Developer Conference</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="animated-bg">
+        <div class="grid-lines"></div>
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <div class="logo-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                        <path d="M2 17l10 5 10-5"/>
+                        <path d="M2 12l10 5 10-5"/>
+                    </svg>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-title">DEVCON/26</span>
+                    <span class="logo-subtitle">ENGINEERING TRUST</span>
+                </div>
+            </div>
+            <div class="status-indicator">
+                <span class="status-dot"></span>
+                <span class="status-text">SYSTEM ONLINE</span>
+            </div>
+        </header>
+
+        <div class="ipo-progress">
+            <div class="ipo-step active" data-step="1">
+                <span class="step-number">01</span>
+                <span class="step-label">INPUT</span>
+            </div>
+            <div class="ipo-connector"></div>
+            <div class="ipo-step" data-step="2">
+                <span class="step-number">02</span>
+                <span class="step-label">PROCESS</span>
+            </div>
+            <div class="ipo-connector"></div>
+            <div class="ipo-step" data-step="3">
+                <span class="step-number">03</span>
+                <span class="step-label">OUTPUT</span>
+            </div>
+        </div>
+
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <div class="hero-badge">PROJECT 04 — FORM VALIDATION</div>
+                    <h1 class="hero-title">
+                        <span class="title-main">DEVCON</span>
+                        <span class="title-accent">/26</span>
+                    </h1>
+                    <p class="hero-subtitle">Engineering the Architecture of Trust</p>
+                    <div class="hero-info">
+                        <div class="info-card">
+                            <span class="info-label">EVENT</span>
+                            <span class="info-value">Developer Conference</span>
+                        </div>
+                        <div class="info-card">
+                            <span class="info-label">DATE</span>
+                            <span class="info-value">24.10.2026</span>
+                        </div>
+                        <div class="info-card">
+                            <span class="info-label">LOCATION</span>
+                            <span class="info-value">KARACHI</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="visual-circle circle-1"></div>
+                    <div class="visual-circle circle-2"></div>
+                    <div class="visual-circle circle-3"></div>
+                    <div class="visual-crosshair"></div>
+                </div>
+            </section>
+
+            <section class="form-section" id="formSection">
+                <div class="section-header">
+                    <span class="section-tag">03</span>
+                    <h2 class="section-title">REGISTRATION PROTOCOL</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="form-container">
+                    <form id="registrationForm" novalidate>
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="fullName" class="form-label">
+                                    <span class="label-icon"></span> FULL NAME <span class="required">*</span>
+                                </label>
+                                <input type="text" id="fullName" class="form-input" placeholder="Enter your full name" aria-describedby="fullName-error" aria-invalid="false" autocomplete="name">
+                                <div class="input-border"></div>
+                                <span class="error-message" id="fullName-error" role="alert" aria-live="polite"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email" class="form-label">
+                                    <span class="label-icon"></span> EMAIL ADDRESS <span class="required">*</span>
+                                </label>
+                                <input type="email" id="email" class="form-input" placeholder="your@email.com" aria-describedby="email-error" aria-invalid="false" autocomplete="email">
+                                <div class="input-border"></div>
+                                <span class="error-message" id="email-error" role="alert" aria-live="polite"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone" class="form-label">
+                                    <span class="label-icon">◈</span> PHONE NUMBER <span class="required">*</span>
+                                </label>
+                                <input type="tel" id="phone" class="form-input" placeholder="+92 300 1234567" aria-describedby="phone-error" aria-invalid="false" autocomplete="tel">
+                                <div class="input-border"></div>
+                                <span class="error-message" id="phone-error" role="alert" aria-live="polite"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="company" class="form-label">
+                                    <span class="label-icon">◈</span> COMPANY NAME <span class="required">*</span>
+                                </label>
+                                <input type="text" id="company" class="form-input" placeholder="Your company or organization" aria-describedby="company-error" aria-invalid="false">
+                                <div class="input-border"></div>
+                                <span class="error-message" id="company-error" role="alert" aria-live="polite"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="jobTitle" class="form-label">
+                                    <span class="label-icon"></span> JOB TITLE <span class="required">*</span>
+                                </label>
+                                <input type="text" id="jobTitle" class="form-input" placeholder="e.g., Frontend Developer" aria-describedby="jobTitle-error" aria-invalid="false">
+                                <div class="input-border"></div>
+                                <span class="error-message" id="jobTitle-error" role="alert" aria-live="polite"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="experience" class="form-label">
+                                    <span class="label-icon">◈</span> YEARS OF EXPERIENCE <span class="required">*</span>
+                                </label>
+                                <input type="number" id="experience" class="form-input" placeholder="e.g., 3" min="0" max="50" aria-describedby="experience-error" aria-invalid="false">
+                                <div class="input-border"></div>
+                                <span class="error-message" id="experience-error" role="alert" aria-live="polite"></span>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="password" class="form-label">
+                                    <span class="label-icon">◈</span> PASSWORD <span class="required">*</span>
+                                </label>
+                                <div class="input-wrapper">
+                                    <input type="password" id="password" class="form-input" placeholder="Create a strong password" aria-describedby="password-error password-requirements" aria-invalid="false" autocomplete="new-password">
+                                    <button type="button" class="toggle-password" aria-label="Toggle password visibility">
+                                        <svg class="eye-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+                                            <circle cx="12" cy="12" r="3"/>
+                                        </svg>
+                                    </button>
+                                    <div class="input-border"></div>
+                                </div>
+                                <span class="error-message" id="password-error" role="alert" aria-live="polite"></span>
+                                
+                                <div class="requirements-panel" id="password-requirements">
+                                    <div class="req-item" data-req="length"><span class="req-icon">○</span><span class="req-text">Minimum 8 characters</span></div>
+                                    <div class="req-item" data-req="uppercase"><span class="req-icon">○</span><span class="req-text">One uppercase letter (A-Z)</span></div>
+                                    <div class="req-item" data-req="lowercase"><span class="req-icon">○</span><span class="req-text">One lowercase letter (a-z)</span></div>
+                                    <div class="req-item" data-req="number"><span class="req-icon">○</span><span class="req-text">One number (0-9)</span></div>
+                                    <div class="req-item" data-req="special"><span class="req-icon">○</span><span class="req-text">One special character (!@#$%^&*)</span></div>
+                                </div>
+
+                                <div class="strength-meter">
+                                    <div class="strength-bar"><div class="strength-fill" id="strengthFill"></div></div>
+                                    <span class="strength-label" id="strengthLabel">STRENGTH</span>
+                                </div>
+                            </div>
+
+                            <div class="form-group full-width">
+                                <label for="confirmPassword" class="form-label">
+                                    <span class="label-icon">◈</span> CONFIRM PASSWORD <span class="required">*</span>
+                                </label>
+                                <input type="password" id="confirmPassword" class="form-input" placeholder="Re-enter your password" aria-describedby="confirmPassword-error" aria-invalid="false" autocomplete="new-password">
+                                <div class="input-border"></div>
+                                <span class="error-message" id="confirmPassword-error" role="alert" aria-live="polite"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="terms" class="custom-checkbox" aria-describedby="terms-error">
+                                <span class="checkmark"></span>
+                                <span class="checkbox-text">I accept the <a href="#" class="link">Terms & Conditions</a> and <a href="#" class="link">Privacy Policy</a> <span class="required">*</span></span>
+                            </label>
+                            <span class="error-message" id="terms-error" role="alert" aria-live="polite"></span>
+                        </div>
+
+                        <button type="submit" class="submit-btn" id="submitBtn">
+                            <span class="btn-text">INITIALIZE REGISTRATION</span>
+                            <span class="btn-icon">→</span>
+                            <div class="btn-glow"></div>
+                        </button>
+                    </form>
+                </div>
+            </section>
+
+            <section class="success-section" id="successSection" hidden>
+                <div class="section-header">
+                    <span class="section-tag">04</span>
+                    <h2 class="section-title">REGISTRATION CONFIRMED</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="success-container">
+                    <div class="success-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                    </div>
+                    <h3 class="success-title" id="successName">Minahil Imran</h3>
+                    <p class="success-subtitle">DEVCON/26 — DEVELOPER CONFERENCE</p>
+                    <div class="success-details">
+                        <div class="detail-card"><span class="detail-label">DATE</span><span class="detail-value">24.10.2026</span></div>
+                        <div class="detail-card"><span class="detail-label">LOCATION</span><span class="detail-value">KARACHI</span></div>
+                        <div class="detail-card"><span class="detail-label">REFERENCE</span><span class="detail-value" id="successRef">DEVCON-XXXXXX</span></div>
+                    </div>
+                    <button type="button" class="reset-btn" id="resetBtn"><span>REGISTER ANOTHER</span><span class="btn-icon">↻</span></button>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-content">
+                <span>© 2026 DEVCON/26</span>
+                <span>Built for DecodeLabs Project 4</span>
+                <span>HTML5 • CSS3 • JavaScript</span>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
